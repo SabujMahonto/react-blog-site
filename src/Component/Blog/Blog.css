@@ -1,7 +1,7 @@
 .blog-container {
   display: flex;
   justify-content: space-between;
-  margin: 90px 140px;
+  margin: 100px 0px;
 }
 
 .blog-image-container {
@@ -22,7 +22,7 @@
 }
 
 .blog-content {
-  width: 600px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

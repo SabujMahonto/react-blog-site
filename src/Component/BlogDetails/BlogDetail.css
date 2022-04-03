@@ -1,0 +1,8 @@
+.blog_detail {
+  display: flex;
+  align-items: center;
+}
+.blog_img {
+  display: flex;
+  align-items: center;
+}

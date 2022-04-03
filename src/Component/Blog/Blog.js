@@ -4,10 +4,11 @@ import Indicator from "../../Assets/Image/indicator.svg";
 import { useNavigate } from "react-router-dom";
 
 const Blog = ({ blog }) => {
-  const navigate = useNavigate();
+ const navigate = useNavigate()
   const { imageURL, title, blog: blogBody, admin, _id } = blog;
   return (
     <div className='blog-container'>
+      {/* <button onClick={()=>navigate('/videos')}>click Here</button> */}
       <div className='blog-image-container'>
         <img src={imageURL} alt='' />
       </div>
@@ -22,7 +23,7 @@ const Blog = ({ blog }) => {
         <p className='blog-preview'>
           {blogBody.length < 400 ? blogBody.length : blogBody.slice(0, 400)}
           
-          <span className='read-more' onClick={() => navigate(`/blog/${_id}`)}>
+          <span className='read-more' onClick={()=> navigate(`/blog/${_id}`)}>
             ...Read More
           </span>
         </p>

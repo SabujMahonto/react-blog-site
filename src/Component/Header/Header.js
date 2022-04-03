@@ -1,12 +1,13 @@
 
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useLocation } from 'react-router-dom';
 import Logo from '../../Assets/Image/logo.png'
 import './Header.css'
 
 const Header = () => {
+    const {pathname} = useLocation()
     return (
-        <nav>
+        <nav style={pathname.includes('blog')? {display:'none'}:{display:'flex'}} >
             <div className="logo_container">
                 <img src={Logo} alt="Logo" />
             </div>
