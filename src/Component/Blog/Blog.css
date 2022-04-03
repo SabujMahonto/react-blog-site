@@ -1,7 +1,7 @@
 .blog-container {
   display: flex;
   justify-content: space-between;
-  margin: 100px 80px;
+  margin: 90px 140px;
 }
 
 .blog-image-container {
@@ -22,7 +22,7 @@
 }
 
 .blog-content {
-  width: 550px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +39,7 @@
 }
 
 .author-name p {
-  margin-left: 10px;
+  margin-left: 5px;
   color: #1e90c2;
 }
 
