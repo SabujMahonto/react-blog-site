@@ -14,21 +14,22 @@ const BlogDetails = () => {
 
     return (
         
+        <>
+        <div className='header-gradient' />
         <div>
-            <div>
-                <button onClick={()=>navigate(-1)}>
-                    <p>Back</p>
-                </button>
+          <button className='back-button' onClick={() => navigate(-1)}>
+            
+            <p>Back</p>
+          </button>
+          <div className='blog-details'>
+            <div className='blog-image'>
+              <img src={blog?.imageURL} alt='' />
             </div>
-           
-           <div className="blog_detail">
-               <div className="blog_img">
-               <img src={blog?.imageURL} alt="" />
-               </div>
-               <h1>{blog?.title}</h1>
-               <p>{blog?.blog}</p>
-           </div>
+            <h1>{blog?.title}</h1>
+            <p>{blog?.blog}</p>
+          </div>
         </div>
+      </>
     );
 };
 
